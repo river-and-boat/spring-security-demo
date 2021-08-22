@@ -1,0 +1,28 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.12.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.rb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.3.12.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.3.12.RELEASE'
+    testImplementation 'org.springframework.security:spring-security-test:2.3.12.RELEASE'
+
+    // auth2
+    implementation 'org.springframework.cloud:spring-cloud-starter-oauth2:2.2.5.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-starter-security:2.2.5.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}

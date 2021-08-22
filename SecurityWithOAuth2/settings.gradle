@@ -1,0 +1,4 @@
+rootProject.name = 'SecurityWithOAuth2'
+include 'AuthorizationService'
+include 'PicResourceService'
+include 'PicViewerWeb'
